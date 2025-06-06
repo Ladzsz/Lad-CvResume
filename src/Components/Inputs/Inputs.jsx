@@ -119,6 +119,7 @@ function Input(props) {
 
       <label htmlFor="responsibilities">Main Responsibilities:</label>
       <textarea
+        rows="10" cols="20"
         id="responsibilities"
         name="responsibilities"
         placeholder="Main Responsibilities"

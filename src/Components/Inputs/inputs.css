@@ -3,15 +3,48 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #808000;
+    overflow: none;
+    padding: 15px;
 }
 
 form {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr;
     gap: 5px;
+    flex-direction: column;
 }
 
 label {
     font-weight: bold;
 }
 
+input {
+    background-color: #9E9E00;
+}
+
+input::placeholder {
+    color: #303030;
+}
+
+textarea {
+    background-color: #9E9E00;
+    margin-bottom: 15%;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #303030;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
